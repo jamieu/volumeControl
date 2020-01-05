@@ -7,9 +7,9 @@ An Ardino sketch to read the current volume and mode settings from an AV1 prepro
 * Arduino mega 2560
 * Each RS232 serial port requires a MAX2232 chip to adjust levels
 
-```
-Pinouts for serial connections
-```
+
+### Pinouts for serial connections
+
 * AV1 | serial port 1 | 19(RX), 18(TX)
 * Lumagen XE | serial port 2 | 17(RX), 16(TX)
 
