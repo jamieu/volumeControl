@@ -1,4 +1,4 @@
-# AV1 to Luamgen Volume Display
+# AV1 to Lumagen Volume Display
 
 An Ardino sketch to read the current volume and mode settings from an AV1 preprocessor and send them to a Lumagen XE to be displayed as an OSD.
 
