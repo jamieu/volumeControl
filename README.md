@@ -1,6 +1,6 @@
 # AV1 to Lumagen Volume Display
 
-An Ardino sketch to read the current volume and mode settings from an AV1 preprocessor and send them to a Lumagen XE to be displayed as an OSD.
+An Arduino sketch to read the current volume and mode settings from an AV1 preprocessor via the RS232 port and send them to a Lumagen XE over RS232 to be displayed as an OSD.
 
 ### Prerequisites
 
