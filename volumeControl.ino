@@ -48,7 +48,7 @@ void loop() {
   }
 
   // Request the current volume settings from the AV1
-  Serial.println("#VOL ?");
+  // Serial.println("#VOL ?");
   // Serial.println("#MODE ?");
   // Serial.println("#NIGHT ?");
   
@@ -64,7 +64,6 @@ void loop() {
 }
 
 String volumeBar(int volume, String mode, String nightmade) {
-  Serial.println("hello2");
   int vol = ceil(volume / 10);
   String bar = "";
   for (int i = 0; i < vol; i++) {
@@ -73,13 +72,13 @@ String volumeBar(int volume, String mode, String nightmade) {
   for (int i = 0; i < 10 - vol; i++) {
     bar += " ";
   }
-  String msg = "ZT1Volume: " + bar + " (" + volume + ")        Mode: " + mode;
+  String msg = "ZT1Volume: " + bar + " (" + volume + ")       Mode: " + mode;
   return msg;
 }
 
 void displayVolume(int volume, String mode, String nightmade) {
   String msg = volumeBar(volume, mode, nightmade);
-  Serial.println("ZT" + 2 + msg);
+  Serial2.println("ZT" + 2 + msg);
 }
 
 
